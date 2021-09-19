@@ -1,18 +1,18 @@
-const ProductoEscalar = function (matrizA, e) {
-    let matrizC = []
-    let n = matrizA.length;
-    let m = matrizA[0].length;
+const ScalarProduct = function (matrixA, e) {
+    let matrixC = []
+    let n = matrixA.length;
+    let m = matrixA[0].length;
     for (let i = 0; i < n; i++) {
-        let matrizpC = []
+        let matrixpC = []
         for (let j = 0; j < m; j++) {
-            matrizpC.push(e * matrizA[i][j])
+            matrixpC.push(e * matrixA[i][j])
         }
-        matrizC.push(matrizpC);
+        matrixC.push(matrixpC);
     }
-    return matrizC
+    return matrixC
 }
 
-module.exports = ProductoEscalar;
+module.exports = ScalarProduct;
 
 
 
